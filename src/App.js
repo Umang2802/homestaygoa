@@ -7,7 +7,6 @@ import Markets from './Pages/markets';
 import Resturants from './Pages/resturants';
 import Waterfalls from './Pages/waterfalls';
 import ErrorPage from './Pages/errorpage';
-import Home from './Pages/';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
