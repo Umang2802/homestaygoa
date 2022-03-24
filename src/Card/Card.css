@@ -1,30 +1,30 @@
 .card {
     cursor: pointer;
-    background-color: rgba(255, 209, 209, 0.836);
+    background-color: #bdc3c7;
     width: 100%;
     height: auto;
-    padding-bottom: 15px;
+    padding-bottom: 6px;
     display: block;
     border-radius: 7px; 
 }
 
 .card-img-top {
-    width: 300px;
-    height: 310px;
-    margin-bottom: 10px;
+    width: 180px;
+    height: 240px;
+    margin-bottom: 6px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
 
 .card-body{
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     font-size: 0.8rem;
 }
 .card-title {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 5px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
 }
 
 .card:hover {

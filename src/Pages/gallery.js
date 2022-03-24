@@ -2,28 +2,44 @@ import React from 'react';
 import Card from '../Card/Card'
 import './gallery.css'
 import { Link } from 'react-router-dom';
+import waterfall from '../Images/waterfall.jpg';
+import beach from '../Images/Beach.jpg';
+import temple from '../Images/temple.jpg';
+import resturant from '../Images/resturant.jpg';
+import fort from '../Images/fort.jpg';
+import church from '../Images/church.jpg';
 
 const Gallery = () => {
 	const data = [
 		{
-			image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.vyP8YKJMWsM1JZORp1fW4QHaHa%26pid%3DApi&f=1',
+			image: beach,
 			title: 'Beaches',
 			url: '/beaches',
 		},
 		{
-			image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Iuy48ib43D_J4rCcHfYxmAHaHa%26pid%3DApi&f=1',
+			image: waterfall,
 			title: 'Waterfalls',
 			url: '/waterfalls',
 		},
 		{
-			image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.DFfBLG13_4i2xBMoScwmVgHaHa%26pid%3DApi&f=1',
+			image: resturant,
 			title: 'Resturants',
 			url: '/resturants',
 		},
 		{
-			image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.DFfBLG13_4i2xBMoScwmVgHaHa%26pid%3DApi&f=1',
-			title: 'Markets',
-			url: '/markets'
+			image: fort,
+			title: 'Forts',
+			url: '/forts'
+		},
+		{
+			image: temple,
+			title: 'Temples',
+			url: '/temples',
+		},
+		{
+			image: church,
+			title: 'Churches',
+			url: '/churches',
 		},
 	]
 

@@ -1,14 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-}
-
-.container {
-  background-image: url("Images/IMG_20220102_151434.jpg");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  background-repeat: repeat;
 }
