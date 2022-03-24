@@ -7,17 +7,20 @@ export const Container = styled.div`
     padding-top: 30px;
     padding-bottom: 20px;
     width: 100%;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(100px);
     position:relative;
 `;
 
 export const Row = styled.div`
     display: grid;
+    margin-left: 135px;
+    margin-right: 135px;
     grid-template-columns: repeat(2,auto);
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     @media (max-width: 1000px) {
         grid-template-columns: repeat(1,auto);
+        margin: auto;
     }
 `;
 

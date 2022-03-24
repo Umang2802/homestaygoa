@@ -46,13 +46,13 @@ function Beaches() {
         <h1 className="title" style={{ textAlign: "center" }}>
           Beaches
         </h1>
-        <div className="row row-cols-1 row-cols-md-2">
+        <div className="row row-cols-1 row-cols-md-2 ">
           {beaches.map((item) => {
             return (
-              <div className="col">
-                <div className="card m-3 p-0 text-dark">
-                  <div className="row">
-                    <div className="col-md-7">
+              <div className="col p-0">
+                <div className="card m-3 p-0 text-dark" style={{width: '90%'}}>
+                  <div className="row m-0">
+                    <div className="col-md-7 p-0">
                       <img
                         src={item.image}
                         class="img-fluid rounded-start"

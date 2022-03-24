@@ -7,7 +7,7 @@ export const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <Heading>Contact Us</Heading>
+            <Heading>Contact Us</Heading><br/>
             <Contact>Call Us: 779808XXXX</Contact>
             <Contact>Email Us: homestaygoa@gmail.com</Contact>
             <Contact>Address: New Vaddem, Bhatpal, Canacona Goa, India</Contact>
