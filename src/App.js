@@ -1,15 +1,15 @@
 import Navbar from "./Navbar/Navbar";
 import { Footer } from "./Footer/Footer";
 import "./App.css";
-import Gallery from "./Pages/gallery";
-import Beaches from "./Pages/beaches";
-import Temples from "./Pages/temple";
-import Resturants from "./Pages/resturants";
-import Waterfalls from "./Pages/waterfalls";
-import Church from "./Pages/church";
-import Forts from "./Pages/forts";
-import ErrorPage from "./Pages/errorpage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Gallery from "./Pages/gallery";
+// import Beaches from "./Pages/beaches";
+// import Temples from "./Pages/temple";
+// import Resturants from "./Pages/resturants";
+// import Waterfalls from "./Pages/waterfalls";
+// import Church from "./Pages/church";
+// import Forts from "./Pages/forts";
+// import ErrorPage from "./Pages/errorpage";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroPage from "./Pages/HeroPage";
 
 function App() {

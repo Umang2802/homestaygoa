@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import HeroImage from "../Assets/heroImage.jpg";
-import ArrowDown from "../Assets/arrow-down.svg";
+// import ArrowDown from "../Assets/arrow-down.svg";
 import styled from "styled-components";
 import Beaches from "./Beaches.jsx";
 import Resturants from "./Resturants.jsx";
