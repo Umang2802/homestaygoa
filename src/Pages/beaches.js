@@ -1,6 +1,8 @@
 import React from "react";
 import Palolem from "../Images/palolem.jpg";
 import Talpona from "../Images/talpona.jpg";
+import Galgibaga from "../Images/galgibaga.jpg";
+import CardComponent from "./cardComponent";
 
 function Beaches() {
   const beaches = [
@@ -19,9 +21,9 @@ function Beaches() {
       dist: "",
     },
     {
-      image: "Galgibaga",
+      image: Galgibaga,
       title: "Galgibaga Beach",
-      desc: "",
+      desc: "The beach forms the nesting grounds of the Olive Ridley turtles, a protected species. It is also known as Turtle beach.",
       map: "",
       dist: "",
     },
@@ -47,37 +49,7 @@ function Beaches() {
           Beaches
         </h1>
         <div className="row row-cols-1 row-cols-md-2 ">
-          {beaches.map((item) => {
-            return (
-              <div className="col p-0">
-                <div className="card m-3 p-0 text-dark" style={{width: '90%'}}>
-                  <div className="row m-0">
-                    <div className="col-md-7 p-0">
-                      <img
-                        src={item.image}
-                        class="img-fluid rounded-start"
-                        alt={item.title}
-                      />
-                    </div>
-                    <div className="col-md-5 mt-4 ps-0">
-                      <div className="card-body">
-                        <h5 className="card-title">{item.title}</h5>
-                        <p className="card-text">{item.desc}</p>
-                        <p className="card-text">
-						It is around {item.dist}km from the property. <br/>
-                          Location:&nbsp;&nbsp;
-                          <small>
-                            <a href={item.map}>{item.map}</a>
-                          </small>
-						  
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+              <CardComponent args={beaches} />
         </div>
       </div>
     </div>
