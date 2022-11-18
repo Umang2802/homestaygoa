@@ -22,8 +22,10 @@ export default function GradientCover() {
       </CardCover>
       <CardCover
         sx={{
-          background:
-            "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
+          background: {
+            xs: "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 100px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 80px)",
+            md: "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
+          },
         }}
       />
       <CardContent sx={{ justifyContent: "flex-end" }}>
