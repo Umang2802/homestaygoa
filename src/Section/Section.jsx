@@ -32,7 +32,7 @@ const Section = (props) => {
             }}
           />
         </Typography>
-        <Carousels />
+        <Carousels array={props.array} />
       </Container>
     </Box>
   );

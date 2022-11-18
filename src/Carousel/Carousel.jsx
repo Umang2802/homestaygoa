@@ -21,7 +21,7 @@ const responsive = {
   },
 };
 
-const Carousels = () => {
+const Carousels = (props) => {
   return (
     <Carousel
       responsive={responsive}
@@ -29,15 +29,9 @@ const Carousels = () => {
       centerMode={true}
       removeArrowOnDeviceType={["tablet", "mobile"]}
     >
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      {props.array.map((v, i) => {
+        return <Card values={v} key={i}></Card>;
+      })}
     </Carousel>
   );
 };

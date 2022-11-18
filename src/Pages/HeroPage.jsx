@@ -86,8 +86,8 @@ const HeroPage = () => {
       </section>
       <Beaches />
       <Resturants />
-      <Forts />
-      <Temples />
+      {/* <Forts />
+      <Temples /> */}
     </>
   );
 };
