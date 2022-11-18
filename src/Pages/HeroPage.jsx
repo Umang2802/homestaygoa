@@ -7,8 +7,8 @@ import styled from "styled-components";
 import Beaches from "./Beaches.jsx";
 import Resturants from "./Resturants.jsx";
 import { Box } from "@mui/system";
-import Temples from "./Temples.jsx";
-import Forts from "./Forts.jsx";
+// import Temples from "./Temples.jsx";
+// import Forts from "./Forts.jsx";
 
 const HeroButton = styled(Button)(({ theme }) => ({
   color: "black",
