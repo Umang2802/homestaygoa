@@ -1,57 +1,40 @@
-import { Button, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
 import React from "react";
-import BasicCard from "../Card/Card";
+import Carousels from "../Carousel/Carousel";
 
 const Section = (props) => {
   return (
-    <section id={props.section}>
-      <Container maxWidth="lg" sx={{ my: 10 }}>
+    <Box
+      id={props.section}
+      sx={{
+        minHeight: { xs: "40vh", md: "80vh" },
+        marginTop: { md: "20px" },
+      }}
+    >
+      <Container maxWidth="lg" sx={{ pt: { xs: 5, md: 15 } }}>
         <Typography
           variant="h3"
           component="h3"
-          sx={{ textAlign: "center", mb: 4 }}
+          sx={{
+            textAlign: "center",
+            mb: 4,
+            fontSize: { xs: "1.5rem", md: "3rem" },
+          }}
         >
           {props.Title}
           <Divider
-            sx={{ width: "7%", margin: "auto", borderBottomWidth: 2, mt: 1 }}
+            sx={{
+              width: "7%",
+              margin: "auto",
+              borderBottomWidth: { md: 2 },
+              mt: 1,
+              mb: { md: 8 },
+            }}
           />
         </Typography>
-        <Grid container direction="row" justifyContent="space-around">
-          <Grid
-            item
-            xs={5}
-            md={4}
-            // sx={{display: "flex", alignItems: "center" }}
-          >
-            <img src={props.image} alt="Beach" style={{ width: "100%" }}></img>
-          </Grid>
-          <Grid item xs={5} md={5}>
-            <Grid
-              container
-              direction="row"
-              spacing={3}
-              justifyContent="space-evenly"
-            >
-              <Grid item xs={6}>
-                <BasicCard></BasicCard>
-              </Grid>
-              <Grid item xs={6}>
-                <BasicCard></BasicCard>
-              </Grid>
-              <Grid item xs={6}>
-                <BasicCard></BasicCard>
-              </Grid>
-              <Grid item xs={6}>
-                <BasicCard></BasicCard>
-              </Grid>
-            </Grid>
-            <Button variant="contained" sx={{ float: "inline-end", m: 2 }}>
-              View All
-            </Button>
-          </Grid>
-        </Grid>
+        <Carousels />
       </Container>
-    </section>
+    </Box>
   );
 };
 

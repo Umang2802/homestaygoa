@@ -1,41 +1,47 @@
 import * as React from "react";
-import AspectRatio from "@mui/joy/AspectRatio";
-import Box from "@mui/joy/Box";
-import Button from "@mui/joy/Button";
 import Card from "@mui/joy/Card";
+import CardCover from "@mui/joy/CardCover";
+import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 
-export default function BasicCard() {
+export default function GradientCover() {
   return (
-    <Card variant="outlined" sx={{ width: 200}}>
-      <Typography level="h2" fontSize="sm" sx={{ mb: 0.5 }}>
-        Yosemite National Park
-      </Typography>
-      <AspectRatio minHeight="50px" maxHeight="80px" sx={{ my: 2 }}>
+    <Card
+      sx={{
+        minHeight: { xs: "150px", md: "300px" },
+        width: { xs: 150, md: 250 },
+      }}
+    >
+      <CardCover>
         <img
-          src="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286"
-          srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
+          src="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320"
+          srcSet="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320&dpr=2 2x"
           loading="lazy"
           alt=""
         />
-      </AspectRatio>
-      <Box sx={{ display: "flex" }}>
-        <div>
-          <Typography level="body3">Distance:</Typography>
-          <Typography fontSize="sm" fontWeight="lg">
-            20Kms
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: "auto", fontWeight: 600 }}
+      </CardCover>
+      <CardCover
+        sx={{
+          background:
+            "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
+        }}
+      />
+      <CardContent sx={{ justifyContent: "flex-end" }}>
+        <Typography
+          level="h2"
+          fontSize={{ xs: "0.5rem", md: "lg" }}
+          textColor="#fff"
+          mb={1}
         >
-          Explore
-        </Button>
-      </Box>
+          Yosemite National Park
+        </Typography>
+        <Typography
+          textColor="neutral.300"
+          fontSize={{ xs: "0.4rem", md: "0.8rem" }}
+        >
+          Distance: 10kms
+        </Typography>
+      </CardContent>
     </Card>
   );
 }

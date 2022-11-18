@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 20px;
   padding-top: 30px;
   padding-bottom: 20px;
   width: 100%;
@@ -17,7 +18,8 @@ export const Row = styled.div`
   margin-left: 135px;
   margin-right: 135px;
   grid-template-columns: repeat(2, auto);
-  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 1200px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(1, auto);
@@ -48,7 +50,7 @@ export const Heading = styled.p`
 export const Contact = styled.p`
   font-size: 14px;
   margin-bottom: 20px;
-
+  fontfamily: "Montserrat", sans-serif;
   @media (max-width: 1000px) {
     font-size: 10px;
     margin-bottom: 10px;
