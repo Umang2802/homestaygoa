@@ -28,6 +28,9 @@ const Carousels = (props) => {
       infinite={true}
       centerMode={true}
       removeArrowOnDeviceType={["tablet", "mobile"]}
+      autoPlay={true}
+      autoPlaySpeed={2000}
+      keyBoardControl={true}
     >
       {props.array.map((v, i) => {
         return <Card values={v} key={i}></Card>;

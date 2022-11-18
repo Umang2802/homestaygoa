@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-const pages = ["beaches", "temples", "forts", "resturants"];
+const pages = ["about", "beaches", "temples", "forts", "resturants"];
 
 function ResponsiveAppBar() {
   return (
@@ -48,6 +48,7 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               fontFamily: "'MonteCarlo', cursive",
               color: "black",
+              justifyContent: "center",
               textDecoration: "none",
             }}
           >

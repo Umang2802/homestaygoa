@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Beaches from "./Beaches.jsx";
 import Resturants from "./Resturants.jsx";
 import { Box } from "@mui/system";
+import About from "./About";
 // import Temples from "./Temples.jsx";
 // import Forts from "./Forts.jsx";
 
@@ -60,7 +61,7 @@ const HeroPage = () => {
             alignItems: "center",
           }}
         >
-          <HeroButton disableRipple={true} href="#beaches">
+          <HeroButton disableRipple={true} href="#about">
             <Typography
               variant="p"
               sx={{ fontSize: { xs: "1.2rem", md: "3.3rem" } }}
@@ -84,6 +85,7 @@ const HeroPage = () => {
           </HeroButton>
         </div>
       </section>
+      <About></About>
       <Beaches />
       <Resturants />
       {/* <Forts />
