@@ -33,13 +33,15 @@ export const Footer = () => {
             <Contact>
               Lisitng 1:{" "}
               <a href="/">
-                Room 1 <NearMeIcon sx={{ color: "black" }}></NearMeIcon>
+                Room 1{" "}
+                <NearMeIcon fontSize="sm" sx={{ color: "black" }}></NearMeIcon>
               </a>
             </Contact>
             <Contact>
               Lisitng 2:{" "}
               <a href="/">
-                Room 2 <NearMeIcon sx={{ color: "black" }}></NearMeIcon>
+                Room 2{" "}
+                <NearMeIcon fontSize="sm" sx={{ color: "black" }}></NearMeIcon>
               </a>
             </Contact>
           </Column>
