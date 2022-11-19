@@ -1,5 +1,5 @@
-import Navbar from "./Navbar/Navbar";
-import { Footer } from "./Footer/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import { Footer } from "./Components/Footer/Footer";
 import "./App.css";
 import HeroPage from "./Pages/HeroPage";
 

@@ -5,7 +5,7 @@ import HeroImage2 from "../Assets/heroImage-2.jpg";
 import ArrowDown from "../Assets/arrow-down.svg";
 import styled from "styled-components";
 import Beaches from "./Beaches.jsx";
-import Resturants from "./Resturants.jsx";
+import Resturants from "./Restaurants.jsx";
 import { Box } from "@mui/system";
 import About from "./About";
 // import Temples from "./Temples.jsx";

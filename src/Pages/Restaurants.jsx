@@ -1,12 +1,12 @@
 import React from "react";
-import Section from "../Components/Section/Section";
+import Section from "../Components/Section/Section.jsx";
 import Palolem from "../Assets/Places/Beaches/palolem.jpg";
 import Talpona from "../Assets/Places/Beaches/talpona.jpg";
 import Galgibaga from "../Assets/Places/Beaches/galgibaga.jpg";
 import Rajbag from "../Assets/Places/Beaches/rajbag.jpg";
 import Patnem from "../Assets/Places/Beaches/patnem.jpg";
 
-const Beaches = () => {
+const Restaurants = () => {
   const beaches = [
     {
       image: Palolem,
@@ -44,8 +44,13 @@ const Beaches = () => {
       dist: "",
     },
   ];
-
-  return <Section Title="Beaches" section="beaches" array={beaches}></Section>;
+  return (
+    <Section
+      Title="Restaurants"
+      section="restaurants"
+      array={beaches}
+    ></Section>
+  );
 };
 
-export default Beaches;
+export default Restaurants;
