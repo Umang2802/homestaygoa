@@ -1,6 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "../Card/Card";
+import Button from "@mui/material/Button";
+import { Dialog } from "@mui/material";
+import React, { useState } from "react";
+import Modal from "../Modal/Modal.jsx";
 
 const responsive = {
   superLargeDesktop: {
@@ -23,20 +27,42 @@ const responsive = {
 };
 
 const Carousels = (props) => {
+  const [open, setOpen] = useState(false);
+  const [item, setItem] = useState();
+
+  const handleClickOpen = (v) => {
+    setOpen(true);
+    setItem(v);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
   return (
-    <Carousel
-      responsive={responsive}
-      infinite={true}
-      centerMode={true}
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      autoPlay={true}
-      autoPlaySpeed={2000}
-      keyBoardControl={true}
-    >
-      {props.array.map((v, i) => {
-        return <Card values={v} key={i}></Card>;
-      })}
-    </Carousel>
+    <>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        centerMode={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        autoPlay={true}
+        autoPlaySpeed={2000}
+        keyBoardControl={true}
+      >
+        {props.array.map((v, i) => {
+          return (
+            <>
+              <Button onClick={() => handleClickOpen(v)}>
+                <Card values={v} key={i}></Card>
+              </Button>
+            </>
+          );
+        })}
+      </Carousel>
+      <Dialog maxWidth="lg" open={open} onClose={handleClose}>
+        <Modal values={item}></Modal>
+      </Dialog>
+    </>
   );
 };
 
