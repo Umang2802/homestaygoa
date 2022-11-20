@@ -63,29 +63,41 @@ const HeroPage = () => {
         >
           <HeroButton disableRipple={true} href="#about">
             <Typography
-              variant="p"
-              sx={{ fontSize: { xs: "1.2rem", md: "3.3rem" } }}
+              variant="caption"
+              sx={{
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: { xs: "0.8rem", md: "1.4rem", textAlign: "center" },
+              }}
             >
-              Home Stay Goa
+              <Box
+                component="span"
+                sx={{
+                  fontSize: { xs: "1.3rem", md: "2.5rem" },
+                  fontWeight: 500,
+                }}
+              >
+                Explore places around{" "}
+              </Box>
+              <br></br>Home Stay Goa/ Holiday Home Goa
             </Typography>
             <Box
               component="img"
               src={ArrowDown}
               alt="ArrowDown"
               sx={{
-                height: { xs: 30, md: 70 },
-                width: { xs: 25, md: 60 },
+                height: { xs: 20, md: 40 },
+                width: { xs: 20, md: 40 },
                 display: "unset",
                 margin: "auto",
                 justifyContent: "center",
                 alignItems: "center",
-                marginTop: { xs: "-10px", md: "-25px" },
+                marginTop: { md: 1 },
               }}
             ></Box>
           </HeroButton>
         </div>
       </section>
-      <About></About>
+      <About />
       <Beaches />
       <Resturants />
       {/* <Forts />

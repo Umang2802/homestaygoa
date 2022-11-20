@@ -14,6 +14,7 @@ export default function MediaControlCard(props) {
           sx={{ width: 500, height: { xs: 180, md: "300px" } }}
           image={props.values.image}
           alt="Live from space album cover"
+          loading="lazy"
         />
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <CardContent sx={{ flex: "1 0 auto" }}>
