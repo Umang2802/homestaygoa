@@ -1,8 +1,17 @@
 import React from "react";
-import Section from "../Section/Section";
+import Section from "../Components/Section/Section";
 
 const Temples = () => {
-  return <Section Title="Temples" section="temples"></Section>;
+  const temples = [
+    {
+      image: "",
+      title: "",
+      desc: "",
+      map: "",
+      dist: "",
+    },
+  ];
+  return <Section Title="Temples" section="temples" array={temples}></Section>;
 };
 
 export default Temples;

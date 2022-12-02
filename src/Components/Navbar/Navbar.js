@@ -12,6 +12,7 @@ const pages = [
   "forts",
   "restaurants",
   "temples",
+  "churches",
   "waterfalls",
 ];
 

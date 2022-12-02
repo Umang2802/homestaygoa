@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../Components/Section/Section";
 
 const Churches = () => {
-  const churches = [
+  const waterfalls = [
     {
       image: "",
       title: "",
@@ -12,7 +12,11 @@ const Churches = () => {
     },
   ];
   return (
-    <Section Title="Churches" section="churches" array={churches}></Section>
+    <Section
+      Title="Waterfalls"
+      section="waterfalls"
+      array={waterfalls}
+    ></Section>
   );
 };
 

@@ -8,8 +8,10 @@ import Beaches from "./Beaches.jsx";
 import Resturants from "./Restaurants.jsx";
 import { Box } from "@mui/system";
 import About from "./About";
-// import Temples from "./Temples.jsx";
-// import Forts from "./Forts.jsx";
+import Temples from "./Temples.jsx";
+import Forts from "./Forts.jsx";
+import Churches from "./Churches.jsx";
+import Waterfalls from "./Waterfalls.jsx";
 
 const HeroButton = styled(Button)(({ theme }) => ({
   color: "black",
@@ -99,9 +101,11 @@ const HeroPage = () => {
       </section>
       <About />
       <Beaches />
+      <Forts />
       <Resturants />
-      {/* <Forts />
-      <Temples /> */}
+      <Temples />
+      <Churches />
+      <Waterfalls />
     </>
   );
 };

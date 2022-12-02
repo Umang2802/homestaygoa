@@ -1,8 +1,17 @@
 import React from "react";
-import Section from "../Section/Section";
+import Section from "../Components/Section/Section";
 
 const Forts = () => {
-  return <Section Title="Forts" section="forts"></Section>;
+  const forts = [
+    {
+      image: "",
+      title: "",
+      desc: "",
+      map: "",
+      dist: "",
+    },
+  ];
+  return <Section Title="Forts" section="forts" array={forts}></Section>;
 };
 
 export default Forts;
